@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // PUBLIC: Certificates — anyone can read for verification
+    // Writes only via Cloud Functions (admin SDK bypasses rules)
+    match /registry_entries/{entry} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // PRIVATE: Certificate metadata (email, payment ID, OTS proof)
+    // Never exposed to clients. Cloud Functions only.
+    match /registry_private/{entry} {
+      allow read, write: if false;
+    }
+
+    // PRIVATE: Magic link tokens — Cloud Functions only
+    match /magic_links/{token} {
+      allow read, write: if false;
+    }
+
+    // PRIVATE: Email queue (Firebase Trigger Email extension)
+    match /mail/{doc} {
+      allow read, write: if false;
+    }
+  }
+}
