@@ -120,11 +120,10 @@ export default function TermsPage() {
 
                             <h2>9. Governing Law</h2>
                             <p>
-                                These terms are governed by the laws of England
-                                and Wales. Any dispute shall be submitted to
-                                Expedited Arbitration administered by the WIPO
-                                Arbitration and Mediation Center in London.
-                            </p>
+                                These terms are governed by the laws of the
+                                State of Wyoming, USA. Any dispute arising
+                                under these terms shall be resolved in the
+                                courts of Wyoming.</p>
 
                             <h2>10. Changes</h2>
                             <p>
