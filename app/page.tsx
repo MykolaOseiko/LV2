@@ -128,40 +128,28 @@ export default function Home() {
                             <div className="bg-white p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                 <FileText className="h-8 w-8 text-[#0A2F1F] mb-4" />
                                 <h3 className="font-serif text-lg font-bold mb-2">Text</h3>
-                                <p className="text-xs text-gray-500 uppercase tracking-wider mb-3">Prose, Poetry, Code</p>
-                                <p className="text-sm text-gray-700">
-                                    <strong>Version History:</strong> Chain of drafts to prove the evolution of the work.
-                                </p>
+                                <p className="text-xs text-gray-500 uppercase tracking-wider">Prose, Poetry, Code</p>
                             </div>
 
                             {/* Art */}
                             <div className="bg-white p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                 <ImageIcon className="h-8 w-8 text-[#0A2F1F] mb-4" />
                                 <h3 className="font-serif text-lg font-bold mb-2">Digital Art</h3>
-                                <p className="text-xs text-gray-500 uppercase tracking-wider mb-3">Illustrations, 3D</p>
-                                <p className="text-sm text-gray-700">
-                                    <strong>Batch Shield:</strong> Batch fixation of dozens of sketches in a single click.
-                                </p>
+                                <p className="text-xs text-gray-500 uppercase tracking-wider">Illustrations, 3D</p>
                             </div>
 
                             {/* Audio */}
                             <div className="bg-white p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                 <Music className="h-8 w-8 text-[#0A2F1F] mb-4" />
                                 <h3 className="font-serif text-lg font-bold mb-2">Audio</h3>
-                                <p className="text-xs text-gray-500 uppercase tracking-wider mb-3">Tracks, Samples</p>
-                                <p className="text-sm text-gray-700">
-                                    <strong>Stems Integrity:</strong> Mathematical combination of separate tracks into one proof.
-                                </p>
+                                <p className="text-xs text-gray-500 uppercase tracking-wider">Tracks, Samples</p>
                             </div>
 
                             {/* Mobile */}
                             <div className="bg-white p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                 <Smartphone className="h-8 w-8 text-[#0A2F1F] mb-4" />
                                 <h3 className="font-serif text-lg font-bold mb-2">Mobile Media</h3>
-                                <p className="text-xs text-gray-500 uppercase tracking-wider mb-3">Photo/Video</p>
-                                <p className="text-sm text-gray-700">
-                                    <strong>Deep Meta & GPS:</strong> Proof of authenticity via device metadata.
-                                </p>
+                                <p className="text-xs text-gray-500 uppercase tracking-wider">Photo/Video</p>
                             </div>
                         </div>
                     </div>
