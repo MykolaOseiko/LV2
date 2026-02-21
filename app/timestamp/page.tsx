@@ -113,18 +113,21 @@ function TimestampContent() {
             const proofBytes = new Uint8Array(ots.otsFile);
             setOtsProof(proofBytes);
 
-            // Step 4: Paddle Checkout
-            setStep("checkout");
-            const proofBase64 = btoa(
-                String.fromCharCode(...proofBytes)
-            );
+            // Step 4: Paddle Checkout (skip for admin testing)
+            const isAdmin = email?.toLowerCase() === "admin@librisventures.com";
+            if (!isAdmin) {
+                setStep("checkout");
+                const proofBase64 = btoa(
+                    String.fromCharCode(...proofBytes)
+                );
 
-            await openCheckout({
-                hashSha256: finalHash,
-                registrantEmail: email || undefined,
-                otsProofBase64: proofBase64,
-                timestamp: ots.timestamp,
-            });
+                await openCheckout({
+                    hashSha256: finalHash,
+                    registrantEmail: email || undefined,
+                    otsProofBase64: proofBase64,
+                    timestamp: ots.timestamp,
+                });
+            }
 
             // Step 5: Save certificate to database
             const certRes = await fetch("/api/certificates", {
