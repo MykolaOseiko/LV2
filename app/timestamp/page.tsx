@@ -422,7 +422,7 @@ function TimestampContent() {
                                             }`}
                                         disabled={isProcessing}
                                     >
-                                        File Upload (Air-Gapped)
+                                        No File Upload (Local Only)
                                     </button>
                                     <button
                                         onClick={() => !isProcessing && setTab("manual")}
@@ -445,8 +445,8 @@ function TimestampContent() {
                                                 Critical Liability Warning
                                             </p>
                                             <ul className="mt-2 space-y-1 list-disc list-inside">
-                                                <li>You must archive the exact file version that generates this hash.</li>
-                                                <li>Changing a single comma will alter the hash and invalidate your proof.</li>
+                                                <li>You must archive the exact file version that generated this hash.</li>
+                                                <li>Changing a single comma will alter the hash and invalidate your AuthorHash proof.</li>
                                                 <li>Libris Ventures does not store your files. If you lose the file, the proof is useless.</li>
                                             </ul>
                                         </div>
