@@ -54,7 +54,7 @@ export default function Home() {
                             transition={{ delay: 0.6, duration: 0.8 }}
                             className="mx-auto max-w-2xl text-lg md:text-xl text-[#F5F5F0]/90 font-light mb-10 leading-relaxed drop-shadow-md"
                         >
-                            Manuscripts · Illustrations · Music · Photos · Code — secured in under 60 seconds
+                            Manuscripts · Illustrations · Music · Photos · Code<br />Any asset secured in under 60 seconds
                         </motion.p>
 
                         <motion.div
