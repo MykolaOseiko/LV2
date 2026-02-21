@@ -18,10 +18,9 @@ export function Footer() {
 
                     <div className="grid grid-cols-2 gap-8 text-sm">
                         <div>
-                            <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-accent mb-3">Offices</h3>
+                            <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-accent mb-3">Office</h3>
                             <ul className="space-y-2 text-muted-foreground">
                                 <li>Wyoming, USA</li>
-                                <li>Tallinn, EST</li>
                             </ul>
                         </div>
                         <div>

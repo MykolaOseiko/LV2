@@ -67,61 +67,14 @@ export default function AboutPage() {
                                     Global Reach
                                 </h3>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    In partnership with KF Books OÜ, we support
-                                    authors bringing their narrative works to
+                                    We serve creators worldwide, helping authors
+                                    and innovators protect their work across
                                     international markets.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Corporate structure */}
-                        <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm">
-                            <h2 className="font-serif text-2xl font-bold text-[#0A2F1F] mb-4">
-                                Corporate Structure
-                            </h2>
-                            <p className="text-gray-700 leading-relaxed mb-6">
-                                Libris Ventures operates as the Asset Company
-                                within a two-entity IP protection structure
-                                designed to safeguard authors&apos; rights.
-                            </p>
 
-                            <div className="space-y-4">
-                                <div className="border-l-4 border-[#D4AF37] pl-4">
-                                    <h3 className="font-bold text-[#0A2F1F]">
-                                        Libris Ventures LLC (Wyoming, USA)
-                                    </h3>
-                                    <p className="text-sm text-gray-600">
-                                        The Asset Company. Holds IP rights,
-                                        provides AuthorHash certificates,
-                                        maintains the Author Dashboard. Does
-                                        not engage in commercial trade.
-                                    </p>
-                                </div>
-                                <div className="border-l-4 border-[#0A2F1F] pl-4">
-                                    <h3 className="font-bold text-[#0A2F1F]">
-                                        KF Books OÜ (Estonia)
-                                    </h3>
-                                    <p className="text-sm text-gray-600">
-                                        The Publishing Company. Operates under
-                                        exclusive worldwide licence from Libris
-                                        Ventures. Handles all commercial
-                                        publishing activities, sales, and
-                                        royalty payments.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Legal */}
-                        <div className="text-center text-sm text-gray-500">
-                            <p>
-                                All agreements governed by the laws of England
-                                and Wales.
-                                <br />
-                                Disputes resolved through WIPO Expedited
-                                Arbitration in London.
-                            </p>
-                        </div>
                     </div>
                 </section>
             </main>
