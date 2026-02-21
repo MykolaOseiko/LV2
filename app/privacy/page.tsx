@@ -72,12 +72,12 @@ export default function PrivacyPage() {
                             <h3>Data we do NOT collect</h3>
                             <ul>
                                 <li>
-                                    Your file. It is hashed entirely in your
-                                    browser and never transmitted to us.
+                                    Your file or digital asset. It is hashed entirely in your
+                                    browser (or you hash it manually) and never transmitted to us.
                                 </li>
                                 <li>
                                     Your legal name (unless you provide it
-                                    voluntarily via email or the Apply form).
+                                    voluntarily via email or in the Certificate form).
                                 </li>
                                 <li>
                                     Payment card details (processed and held
