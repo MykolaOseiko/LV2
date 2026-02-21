@@ -102,9 +102,9 @@ export default function Home() {
                             </div>
                             <div className="bg-[#F5F5F0]/5 p-8 rounded border border-[#F5F5F0]/10 hover:border-[#D4AF37]/50 transition-colors">
                                 <Zap className="h-10 w-10 text-[#D4AF37] mb-6" />
-                                <h3 className="font-serif text-xl font-bold mb-3">Merkle Tree Core</h3>
+                                <h3 className="font-serif text-xl font-bold mb-3">Deterministic Proof</h3>
                                 <p className="text-[#F5F5F0]/70 text-sm leading-relaxed">
-                                    We stitch the asset, metadata, and your statement into a single hash. This guarantees inseparable linkage of all proof components.
+                                    Your file produces a unique SHA-256 fingerprint — change a single byte and the hash changes entirely. This creates tamper-proof, mathematically verifiable evidence.
                                 </p>
                             </div>
                         </div>
