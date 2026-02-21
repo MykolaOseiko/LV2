@@ -80,7 +80,7 @@ export default function PricingPage() {
                                     Secure Your Asset Now <ArrowRight className="h-4 w-4" />
                                 </Link>
                                 <p className="mt-4 text-xs text-gray-400">
-                                    Secured by Stripe & Paddle
+                                    Secured by Paddle
                                 </p>
                             </div>
                         </div>
