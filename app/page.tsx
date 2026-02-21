@@ -2,7 +2,7 @@
 
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { ArrowRight, Shield, Globe, Lock, Smartphone, FileText, Music, Image as ImageIcon, Zap, ShieldCheck } from "lucide-react";
+import { ArrowRight, Shield, Globe, Smartphone, FileText, Music, Image as ImageIcon, Zap, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -155,63 +155,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Promo Codes & Privacy */}
-                <section className="py-24 bg-white border-t border-gray-100">
-                    <div className="container mx-auto px-6">
-                        <div className="flex flex-col md:flex-row gap-16 items-center">
-                            <div className="flex-1">
-                                <span className="text-xs font-bold tracking-widest uppercase text-[#D4AF37] mb-2 block">
-                                    Privacy & Virality
-                                </span>
-                                <h2 className="font-serif text-4xl font-bold text-[#0A2F1F] mb-6">
-                                    Promo Codes Instead of Accounts
-                                </h2>
-                                <div className="space-y-6">
-                                    <div className="flex gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-[#0A2F1F]/5 flex items-center justify-center shrink-0">
-                                            <Lock className="h-5 w-5 text-[#0A2F1F]" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-[#0A2F1F] mb-1">Zero-Friction & Anonymity</h4>
-                                            <p className="text-sm text-gray-600">
-                                                No passwords. Users enter a code to gain access. The code is the identifier for your certificate collection.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-[#0A2F1F]/5 flex items-center justify-center shrink-0">
-                                            <Globe className="h-5 w-5 text-[#0A2F1F]" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-[#0A2F1F] mb-1">Paired Referral System</h4>
-                                            <p className="text-sm text-gray-600">
-                                                Refer a friend — they get a discount, and you earn free Shield Credits.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex-1 bg-[#0A2F1F] p-8 md:p-12 text-[#F5F5F0] rounded-sm relative overflow-hidden">
-                                <div className="absolute top-0 right-0 p-32 bg-[#D4AF37]/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
-                                <h3 className="font-serif text-2xl font-bold mb-6 relative z-10">Libris Mobile Strategy</h3>
-                                <ul className="space-y-4 relative z-10 text-sm opacity-90">
-                                    <li className="flex gap-3">
-                                        <CheckIcon />
-                                        <span><strong>Timestamp on Demand:</strong> Protect valuable content with one tap.</span>
-                                    </li>
-                                    <li className="flex gap-3">
-                                        <CheckIcon />
-                                        <span><strong>Visual Marker:</strong> Shield with QR code on every asset for instant verification.</span>
-                                    </li>
-                                    <li className="flex gap-3">
-                                        <CheckIcon />
-                                        <span><strong>Gallery Integration:</strong> Create a "digital alibi" right at the scene.</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
 
                 {/* Guarantee */}
                 <section className="py-24 bg-[#0A2F1F] text-[#F5F5F0] border-t border-[#F5F5F0]/10">
