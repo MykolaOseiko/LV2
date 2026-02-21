@@ -116,7 +116,7 @@ export default function Home() {
                     <div className="container mx-auto px-6">
                         <div className="mb-16 text-center">
                             <span className="text-xs font-bold tracking-widest uppercase text-[#D4AF37] mb-2 block">
-                                Spheres of Protection
+                                What You Can Protect
                             </span>
                             <h2 className="font-serif text-4xl font-bold text-[#0A2F1F]">
                                 From Text to Mobile Media
