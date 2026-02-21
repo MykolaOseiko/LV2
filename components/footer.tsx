@@ -35,10 +35,6 @@ export function Footer() {
 
                 <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-muted-foreground font-mono">
                     <p>&copy; {new Date().getFullYear()} Libris Ventures LLC. All rights reserved.</p>
-                    <div className="flex items-center gap-2">
-                        <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                        System Operational
-                    </div>
                 </div>
             </div>
         </footer>
