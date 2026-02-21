@@ -12,7 +12,7 @@ export function Footer() {
                             <span className="font-serif text-lg font-bold text-background">Libris Ventures</span>
                         </Link>
                         <p className="text-xs font-mono text-muted-foreground max-w-xs">
-                            Strategic capital and cryptographic security for high-value intellectual property.
+                            Cryptographic proof of authorship. eIDAS certified timestamps anchored to the Bitcoin blockchain.
                         </p>
                     </div>
 
