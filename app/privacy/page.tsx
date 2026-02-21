@@ -131,9 +131,9 @@ export default function PrivacyPage() {
                                     (Merchant of Record).
                                 </li>
                                 <li>
-                                    <strong>Google Firebase</strong> — database
+                                    <strong>DigitalOcean</strong> — server
                                     hosting and infrastructure (data stored in
-                                    EU/US data centres).
+                                    US data centres).
                                 </li>
                                 <li>
                                     <strong>Public blockchain</strong> — the
