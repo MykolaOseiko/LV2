@@ -176,7 +176,7 @@ export default function PrivacyPage() {
                                 <br />
                                 Wyoming, USA
                                 <br />
-                                privacy@libris.ventures
+                                privacy@librisventures.com
                             </p>
                         </div>
                     </div>

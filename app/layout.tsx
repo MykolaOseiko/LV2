@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         title: "Libris Ventures — AuthorHash",
         description:
             "Cryptographic proof of existence for your creative work. Anchored to the Bitcoin blockchain.",
-        url: "https://libris.ventures",
+        url: "https://librisventures.com",
         siteName: "Libris Ventures",
         type: "website",
     },

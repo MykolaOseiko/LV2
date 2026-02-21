@@ -140,7 +140,7 @@ export default function TermsPage() {
                                     <br />
                                     Wyoming, USA
                                     <br />
-                                    libris.ventures
+                                    librisventures.com
                                 </p>
                             </div>
                         </div>

@@ -192,7 +192,7 @@ export async function generateCertificatePDF(
     });
 
     // --- QR Code ---
-    const verifyUrl = `https://libris.ventures/verify?ref=${data.certRef}`;
+    const verifyUrl = `https://librisventures.com/verify?ref=${data.certRef}`;
     try {
         const qrDataUrl = await QRCode.toDataURL(verifyUrl, {
             width: 120,
@@ -266,7 +266,7 @@ export async function generateCertificatePDF(
     });
 
     page.drawText(
-        "Libris Ventures LLC  •  Wyoming, USA  •  libris.ventures",
+        "Libris Ventures LLC  •  Wyoming, USA  •  librisventures.com",
         {
             x: margin,
             y: 15,
@@ -291,7 +291,7 @@ export async function generateCertificatePDF(
  * Trigger browser download of the PDF.
  */
 export function downloadPDF(pdfBytes: Uint8Array, certRef: string) {
-    const blob = new Blob([pdfBytes], { type: "application/pdf" });
+    const blob = new Blob([pdfBytes.buffer as ArrayBuffer], { type: "application/pdf" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;

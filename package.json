@@ -3,20 +3,29 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
+    "browser": {
+      "fs": false,
+      "path": false,
+      "os": false,
+      "net": false,
+      "tls": false,
+      "child_process": false
+    },
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@paddle/paddle-js": "^1.3.0",
+    "better-sqlite3": "^12.6.2",
     "clsx": "^2.1.1",
-    "firebase": "^12.8.0",
     "framer-motion": "^12.31.0",
     "javascript-opentimestamps": "^0.4.5",
     "lucide-react": "^0.563.0",
     "next": "16.1.6",
     "pdf-lib": "^1.17.1",
+    "qr-code-styling": "^1.9.2",
     "qrcode": "^1.5.4",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -24,6 +33,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20",
     "@types/qrcode": "^1.5.5",
     "@types/react": "^19",

@@ -38,6 +38,10 @@
   ],
   "exclude": [
     "node_modules",
-    "functions"
+    "functions",
+    "extracted_archive",
+    "New version (2)",
+    "OLD_FULL_VERSION",
+    "SOURCE_DOCS"
   ]
 }
