@@ -88,29 +88,11 @@ export default function PricingPage() {
                             </div>
                         </div>
 
-                        {/* FAQ */}
-                        <div className="space-y-8 max-w-3xl mx-auto">
-                            <h2 className="font-serif text-3xl font-bold text-[#0A2F1F] text-center mb-8">
-                                Frequently Asked Questions
-                            </h2>
-
-                            <FAQItem
-                                q="What is 'Dual Shield' technology?"
-                                a="It's our proprietary method of layering two types of protection: a decentralized blockchain anchor (Bitcoin via OpenTimestamps) for mathematical immutability, AND a centralized EU Qualified Electronic Timestamp (eIDAS) for immediate legal recognition in court. You get the best of both worlds."
-                            />
-                            <FAQItem
-                                q="Do I need to create an account?"
-                                a="No. We believe in privacy by default. accessible via Promo Code or direct payment. You receive your certificate immediately. If you choose to provide an email, we can send a backup link, but it's optional."
-                            />
-                            <FAQItem
-                                q="Is this a copyright registration?"
-                                a="It provides 'Proof of Anteriority' (proof of existence at a specific time). While not a government copyright registration, it is a critical piece of evidence in copyright disputes to prove you had the work before anyone else."
-                            />
-                            <FAQItem
-                                q="How does the 60-Day Guarantee work?"
-                                a="If you find that the OpenTimestamps proof file is invalid, or the eIDAS token cannot be verified by standard European validator tools, simply email us with your certificate ID. We will verify the failure and issue a full refund immediately."
-                            />
-                        </div>
+                        {/* FAQ link */}
+                        <p className="text-center text-sm text-gray-500">
+                            Have questions? Check out our{" "}
+                            <Link href="/faq" className="text-[#D4AF37] font-semibold hover:underline">FAQ</Link>
+                        </p>
                     </div>
                 </section>
             </main>
@@ -130,15 +112,3 @@ function FeatureItem({ text, icon }: { text: string, icon?: React.ReactNode }) {
     )
 }
 
-function FAQItem({ q, a }: { q: string, a: string }) {
-    return (
-        <div className="bg-white p-6 rounded border border-gray-100 shadow-sm">
-            <h3 className="font-bold text-[#0A2F1F] mb-2 flex items-center gap-2">
-                <span className="text-[#D4AF37] text-lg">Q.</span> {q}
-            </h3>
-            <p className="text-sm text-gray-600 leading-relaxed pl-6 border-l-2 border-gray-100">
-                {a}
-            </p>
-        </div>
-    )
-}
