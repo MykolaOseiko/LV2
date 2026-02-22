@@ -42,7 +42,7 @@ export default function TermsPage() {
                                 (anteriority). It does <strong>not</strong>{" "}
                                 constitute proof of authorship, ownership,
                                 copyright registration, or any legal right. The
-                                certificate attests that a hash existed at a
+                                certificate attests that a hash source file existed at a
                                 stated time; it makes no claim about who created
                                 the underlying file or who owns the rights to
                                 it.
