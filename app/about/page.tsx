@@ -18,8 +18,8 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="py-16">
-                    <div className="container mx-auto px-6 max-w-3xl space-y-12">
+                <section className="py-16 -mt-10">
+                    <div className="container mx-auto px-6 max-w-3xl space-y-12 relative z-20">
                         {/* Mission */}
                         <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm border-t-8 border-[#D4AF37]">
                             <h2 className="font-serif text-2xl font-bold text-[#0A2F1F] mb-4">

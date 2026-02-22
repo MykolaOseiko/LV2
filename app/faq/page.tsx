@@ -154,26 +154,28 @@ export default function FaqPage() {
                     </div>
                 </section>
 
-                <section className="py-16">
-                    <div className="container mx-auto px-6 max-w-3xl">
-                        {faqs.map((section) => (
-                            <div key={section.category} className="mb-12">
-                                <h2 className="font-serif text-2xl font-bold text-[#0A2F1F] mb-6 pb-2 border-b-2 border-[#D4AF37]">
-                                    {section.category}
-                                </h2>
-                                <div className="bg-white shadow-sm rounded-sm">
-                                    <div className="px-6">
-                                        {section.items.map((item) => (
-                                            <FaqItem
-                                                key={item.q}
-                                                q={item.q}
-                                                a={item.a}
-                                            />
-                                        ))}
+                <section className="py-16 -mt-10">
+                    <div className="container mx-auto px-6 max-w-3xl relative z-20">
+                        <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm border-t-8 border-[#D4AF37]">
+                            {faqs.map((section) => (
+                                <div key={section.category} className="mb-12">
+                                    <h2 className="font-serif text-2xl font-bold text-[#0A2F1F] mb-6 pb-2 border-b-2 border-[#D4AF37]">
+                                        {section.category}
+                                    </h2>
+                                    <div className="bg-white shadow-sm rounded-sm">
+                                        <div className="px-6">
+                                            {section.items.map((item) => (
+                                                <FaqItem
+                                                    key={item.q}
+                                                    q={item.q}
+                                                    a={item.a}
+                                                />
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </section>
             </main>

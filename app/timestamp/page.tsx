@@ -226,11 +226,11 @@ function TimestampContent() {
                 </section>
 
                 {/* Main content */}
-                <section className="py-16">
-                    <div className="container mx-auto px-6 max-w-2xl">
+                <section className="py-16 -mt-10">
+                    <div className="container mx-auto px-6 max-w-2xl relative z-20">
                         {step === "success" && certResult ? (
                             /* ---- SUCCESS STATE ---- */
-                            <div className="bg-white shadow-2xl rounded-sm overflow-hidden">
+                            <div className="bg-white shadow-2xl rounded-sm border-t-8 border-[#D4AF37] overflow-hidden">
                                 {/* Green header bar */}
                                 <div className="bg-[#0A2F1F] p-6 flex items-center justify-between">
                                     <div className="flex items-center gap-3">

@@ -17,9 +17,9 @@ export default function PrivacyPage() {
                     </div>
                 </section>
 
-                <section className="py-16">
-                    <div className="container mx-auto px-6 max-w-3xl">
-                        <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm prose prose-sm max-w-none">
+                <section className="py-16 -mt-10">
+                    <div className="container mx-auto px-6 max-w-3xl relative z-20">
+                        <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm border-t-8 border-[#D4AF37] prose prose-sm max-w-none">
                             <p className="text-sm text-gray-500 mb-8">
                                 Last updated: February 2026
                             </p>

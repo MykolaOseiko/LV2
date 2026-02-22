@@ -187,8 +187,8 @@ function VerifyContent() {
                     </div>
                 </section>
 
-                <section className="py-16">
-                    <div className="container mx-auto px-6 max-w-2xl">
+                <section className="py-16 -mt-10">
+                    <div className="container mx-auto px-6 max-w-2xl relative z-20">
                         {/* Show results directly if auto-loaded from QR */}
                         {isFromQR && results && results.length > 0 ? (
                             <div className="space-y-6">
