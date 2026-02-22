@@ -220,7 +220,7 @@ function TimestampContent() {
                             AuthorHash Certificate
                         </h1>
                         <p className="text-[#F5F5F0]/60 uppercase tracking-widest text-sm">
-                            Immutable &amp; Timestamped Proof of Existence
+                            Timestamped Proof of Existence
                         </p>
                     </div>
                 </section>

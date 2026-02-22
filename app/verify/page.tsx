@@ -180,7 +180,7 @@ function VerifyContent() {
                                     Verify Certificate
                                 </h1>
                                 <p className="text-[#F5F5F0]/60 uppercase tracking-widest text-sm">
-                                    Independent Verification of AuthorHash Certificates
+                                    Independent Verification Also Possible
                                 </p>
                             </>
                         )}

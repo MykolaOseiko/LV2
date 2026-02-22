@@ -149,7 +149,7 @@ export default function FaqPage() {
                             Frequently Asked Questions
                         </h1>
                         <p className="text-[#F5F5F0]/60 uppercase tracking-widest text-sm">
-                            Everything You Need to Know About AuthorHash
+                            Everything You Need to Know
                         </p>
                     </div>
                 </section>

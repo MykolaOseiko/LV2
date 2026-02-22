@@ -31,7 +31,7 @@ export default function PricingPage() {
                                     AuthorHash Certificate
                                 </span>
                                 <div className="flex items-baseline justify-center gap-1 mb-2">
-                                    <span className="font-serif text-5xl font-bold text-[#0A2F1F]">
+                                    <span className="font-serif text-3xl font-bold text-[#0A2F1F]">
                                         $4.99
                                     </span>
                                     <span className="text-gray-500 text-xl">
