@@ -13,7 +13,7 @@ export function Footer() {
                         </Link>
                         <div className="text-xs font-mono text-muted-foreground max-w-xs space-y-2">
                             <p>
-                                Cryptographic proof of authorship. eIDAS certified timestamps anchored to the Bitcoin blockchain.
+                                Cryptographic proof of authorship.
                             </p>
                             <p>
                                 &copy; {new Date().getFullYear()} Libris Ventures LLC. All rights reserved.
