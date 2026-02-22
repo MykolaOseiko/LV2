@@ -17,7 +17,7 @@ export default function PricingPage() {
                             Pricing
                         </h1>
                         <p className="text-[#F5F5F0]/60 uppercase tracking-widest text-sm">
-                            One Price. No Subscriptions. No Hidden Fees.
+                            No Subscriptions. No Hidden Fees.
                         </p>
                     </div>
                 </section>
