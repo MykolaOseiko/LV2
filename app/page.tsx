@@ -12,7 +12,7 @@ export default function Home() {
             <Navbar />
             <main className="flex-1">
                 {/* Hero */}
-                <section className="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden bg-[#0A2F1F] text-[#F5F5F0]">
+                <section className="relative min-h-[90vh] flex items-center pt-12 pb-16 overflow-hidden bg-[#0A2F1F] text-[#F5F5F0]">
                     <div
                         className="absolute inset-0 z-0"
                         style={{
