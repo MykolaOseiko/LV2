@@ -2,7 +2,7 @@
 
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { Check, ArrowRight, ShieldCheck, Zap, Globe } from "lucide-react";
+import { Check, ArrowRight, Zap, Globe } from "lucide-react";
 import Link from "next/link";
 
 export default function PricingPage() {
@@ -42,7 +42,7 @@ export default function PricingPage() {
                                     AuthorHash Certificate
                                 </span>
                                 <div className="flex items-baseline justify-center gap-1 mb-2">
-                                    <span className="font-serif text-7xl font-bold text-[#0A2F1F]">
+                                    <span className="font-serif text-5xl font-bold text-[#0A2F1F]">
                                         $4.99
                                     </span>
                                     <span className="text-gray-500 text-xl">
@@ -56,16 +56,10 @@ export default function PricingPage() {
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 mb-10">
                                 <div className="col-span-full mb-2">
-                                    <h3 className="font-bold text-[#0A2F1F] border-b border-gray-100 pb-2 mb-4">Core Technology</h3>
-                                </div>
-                                <FeatureItem text="Dual Shield Protection" icon={<ShieldCheck className="w-4 h-4" />} />
-                                <FeatureItem text="Bitcoin Blockchain Anchor" icon={<Globe className="w-4 h-4" />} />
-                                <FeatureItem text="EU Qualified Timestamp (eIDAS)" icon={<Zap className="w-4 h-4" />} />
-                                <FeatureItem text="Merkle Tree Evidence Structure" />
-
-                                <div className="col-span-full mt-6 mb-2">
                                     <h3 className="font-bold text-[#0A2F1F] border-b border-gray-100 pb-2 mb-4">Certificate Features</h3>
                                 </div>
+                                <FeatureItem text="Bitcoin Blockchain Anchor" icon={<Globe className="w-4 h-4" />} />
+                                <FeatureItem text="EU Qualified Timestamp (eIDAS)" icon={<Zap className="w-4 h-4" />} />
                                 <FeatureItem text="PDF Certificate of Anteriority" />
                                 <FeatureItem text="Downloadable OTS Proof File" />
                                 <FeatureItem text="Instant Verification Page" />
