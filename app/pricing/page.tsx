@@ -11,24 +11,13 @@ export default function PricingPage() {
             <Navbar />
             <main className="flex-1 bg-[#F5F5F0]">
                 {/* Header */}
-                <section className="bg-[#0A2F1F] text-[#F5F5F0] py-20 relative overflow-hidden">
-                    <div
-                        className="absolute inset-0 z-0 opacity-20"
-                        style={{
-                            backgroundImage: "url('/library-bg.png')",
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                        }}
-                    />
-                    <div className="container mx-auto px-6 text-center relative z-10">
-                        <span className="text-xs font-bold tracking-widest uppercase text-[#D4AF37] mb-4 block">
-                            Invest in Digital Trust
-                        </span>
-                        <h1 className="font-serif text-3xl md:text-5xl font-bold mb-6">
-                            One Price. Dual Shield.
+                <section className="bg-[#0A2F1F] text-[#F5F5F0] py-16">
+                    <div className="container mx-auto px-6 text-center">
+                        <h1 className="font-serif text-3xl md:text-5xl font-bold mb-4">
+                            Pricing
                         </h1>
-                        <p className="text-[#F5F5F0]/80 max-w-2xl mx-auto text-lg font-light">
-                            Secure your intellectual property with the combined power of Bitcoin immutability and EU legal standards.
+                        <p className="text-[#F5F5F0]/60 uppercase tracking-widest text-sm">
+                            One Price. No Subscriptions. No Hidden Fees.
                         </p>
                     </div>
                 </section>

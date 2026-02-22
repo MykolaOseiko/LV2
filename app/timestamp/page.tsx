@@ -216,7 +216,7 @@ function TimestampContent() {
                 {/* Header */}
                 <section className="bg-[#0A2F1F] text-[#F5F5F0] py-16">
                     <div className="container mx-auto px-6 text-center">
-                        <h1 className="font-serif text-3xl md:text-5xl font-bold mb-4 italic">
+                        <h1 className="font-serif text-3xl md:text-5xl font-bold mb-4">
                             AuthorHash Certificate
                         </h1>
                         <p className="text-[#F5F5F0]/60 uppercase tracking-widest text-sm">
