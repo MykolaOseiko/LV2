@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { useState, useCallback, useRef, useEffect, Suspense } from "react";
 import {
-    Upload, AlertTriangle, Check, Copy, Download,
+    FileText, AlertTriangle, Check, Copy, Download,
     Loader2, Hash, ShieldCheck, Globe, QrCode,
 } from "lucide-react";
 import { calculateSHA256 } from "@/lib/hash";
@@ -425,7 +425,7 @@ function TimestampContent() {
                                             }`}
                                         disabled={isProcessing}
                                     >
-                                        No File Upload (Local Only)
+                                        Select File
                                     </button>
                                     <button
                                         onClick={() => !isProcessing && setTab("manual")}
@@ -439,22 +439,7 @@ function TimestampContent() {
                                     </button>
                                 </div>
 
-                                {/* Liability warning */}
-                                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-8">
-                                    <div className="flex items-start gap-2">
-                                        <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
-                                        <div className="text-sm text-amber-800">
-                                            <p className="font-bold">
-                                                Critical Liability Warning
-                                            </p>
-                                            <ul className="mt-2 space-y-1 list-disc list-inside">
-                                                <li>You must archive the exact file version that generated this hash.</li>
-                                                <li>Changing a single comma will alter the hash and invalidate your AuthorHash proof.</li>
-                                                <li>Libris Ventures does not store your files. If you lose the file, the proof is useless.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+
 
                                 {/* File upload or manual hash */}
                                 {tab === "upload" ? (
@@ -489,7 +474,7 @@ function TimestampContent() {
                                             </div>
                                         ) : (
                                             <div>
-                                                <Upload className="h-8 w-8 text-gray-400 mx-auto mb-2" />
+                                                <FileText className="h-8 w-8 text-gray-400 mx-auto mb-2" />
                                                 <p className="font-bold text-[#0A2F1F]">
                                                     Drag &amp; drop or click to select
                                                 </p>
@@ -620,6 +605,23 @@ function TimestampContent() {
                                 <p className="text-center text-xs text-gray-500 mt-4">
                                     Payment processed by Paddle. Price includes applicable taxes.
                                 </p>
+
+                                {/* Liability warning */}
+                                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mt-8">
+                                    <div className="flex items-start gap-2">
+                                        <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                                        <div className="text-sm text-amber-800">
+                                            <p className="font-bold">
+                                                Critical Liability Warning
+                                            </p>
+                                            <ul className="mt-2 space-y-1 list-disc list-inside">
+                                                <li>You must archive the exact file version that generated this hash.</li>
+                                                <li>Changing a single comma will alter the hash and invalidate your AuthorHash proof.</li>
+                                                <li>Libris Ventures does not store your files. If you lose the file, the proof is useless.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         )}
                     </div>
