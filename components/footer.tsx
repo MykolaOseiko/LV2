@@ -24,10 +24,9 @@ export function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-accent mb-3">Legal</h3>
-                            <ul className="space-y-2 text-muted-foreground hover:text-background transition-colors">
-                                <li><Link href="/terms">Terms of Service</Link></li>
-                                <li><Link href="/privacy">Privacy Policy</Link></li>
+                            <ul className="space-y-2">
+                                <li><Link href="/terms" className="text-accent hover:text-background transition-colors">Terms of Service</Link></li>
+                                <li><Link href="/privacy" className="text-accent hover:text-background transition-colors">Privacy Policy</Link></li>
                             </ul>
                         </div>
                     </div>
