@@ -40,17 +40,6 @@ export default function AboutPage() {
                         {/* What we do */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <div className="bg-white p-6 shadow rounded-sm space-y-3">
-                                <Shield className="h-8 w-8 text-[#0A2F1F]" />
-                                <h3 className="font-serif text-lg font-bold text-[#0A2F1F]">
-                                    Asset Protection
-                                </h3>
-                                <p className="text-sm text-gray-600 leading-relaxed">
-                                    We hold and protect intellectual property
-                                    rights on behalf of authors, structurally
-                                    separated from commercial operations.
-                                </p>
-                            </div>
-                            <div className="bg-white p-6 shadow rounded-sm space-y-3">
                                 <Lock className="h-8 w-8 text-[#0A2F1F]" />
                                 <h3 className="font-serif text-lg font-bold text-[#0A2F1F]">
                                     AuthorHash
@@ -70,6 +59,18 @@ export default function AboutPage() {
                                     We serve creators worldwide, helping authors
                                     and innovators protect their work across
                                     international markets.
+                                </p>
+                            </div>
+                            <div className="bg-white p-6 shadow rounded-sm space-y-3">
+                                <Shield className="h-8 w-8 text-[#0A2F1F]" />
+                                <h3 className="font-serif text-lg font-bold text-[#0A2F1F]">
+                                    Asset Protection
+                                </h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    We hold and protect IP rights for narrative
+                                    works on behalf of authors, structurally
+                                    separating it from commercial operations of
+                                    their publishers.
                                 </p>
                             </div>
                         </div>
