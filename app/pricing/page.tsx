@@ -25,7 +25,7 @@ export default function PricingPage() {
                 <section className="py-16 -mt-10">
                     <div className="container mx-auto px-6 max-w-4xl">
                         {/* Main pricing card */}
-                        <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm border-t-8 border-[#D4AF37] mb-12 relative z-20">
+                        <div className="bg-white p-8 md:pt-10 md:pb-12 md:px-12 shadow-2xl rounded-sm border-t-8 border-[#D4AF37] mb-12 relative z-20">
                             <div className="text-center mb-6">
                                 <div className="flex items-baseline justify-center gap-1 mb-2">
                                     <span className="font-serif text-3xl font-bold text-[#0A2F1F]">
@@ -42,7 +42,7 @@ export default function PricingPage() {
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 mb-10">
                                 <div className="col-span-full mb-2">
-                                    <h3 className="font-bold text-[#0A2F1F] border-b border-gray-100 pb-2 mb-4">AuthorHash Certificate Features</h3>
+                                    <h3 className="font-bold text-[#0A2F1F] border-b border-gray-100 pb-1 mb-2">AuthorHash Certificate Features</h3>
                                 </div>
                                 <FeatureItem text="Bitcoin Blockchain Anchor" icon={<Globe className="w-4 h-4" />} />
                                 <FeatureItem text="EU Qualified Timestamp (eIDAS)" icon={<Zap className="w-4 h-4" />} />
