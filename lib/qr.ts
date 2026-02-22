@@ -2,25 +2,13 @@ import QRCodeStyling, {
     type Options as QROptions,
 } from "qr-code-styling";
 
-/* ── B&W palette for maximum scannability ──────────────── */
-
-/**
- * Inline SVG of the LV shield logo — black contour only.
- */
-const LV_SHIELD_SVG = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
-  <path d="M60 5 L110 30 L110 80 Q110 120 60 135 Q10 120 10 80 L10 30 Z"
-        fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
-  <text x="60" y="85" text-anchor="middle" font-family="Georgia,serif"
-        font-size="42" font-weight="bold" fill="#000000">LV</text>
-</svg>
-`)}`;
+/* ── Clean B&W QR — no logo overlay for maximum scannability ── */
 
 /* ── Default config ───────────────────────────────────────── */
 const BASE_OPTIONS: Partial<QROptions> = {
     type: "svg",
     qrOptions: {
-        errorCorrectionLevel: "H", // 30% — room for logo overlay
+        errorCorrectionLevel: "M",
     },
     dotsOptions: {
         color: "#000000",
@@ -36,13 +24,6 @@ const BASE_OPTIONS: Partial<QROptions> = {
     },
     backgroundOptions: {
         color: "#FFFFFF",
-    },
-    image: LV_SHIELD_SVG,
-    imageOptions: {
-        crossOrigin: "anonymous",
-        margin: 4,
-        imageSize: 0.25,
-        hideBackgroundDots: true,
     },
 };
 

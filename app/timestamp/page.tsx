@@ -277,19 +277,29 @@ function TimestampContent() {
                                             </div>
                                         </div>
 
-                                        {/* Branded QR Code */}
+                                        {/* QR Code with logo beside it */}
                                         {qrBlobUrl && (
                                             <div className="shrink-0 text-center">
-                                                <div className="w-32 h-32 border-2 border-[#D4AF37]/30 rounded overflow-hidden">
-                                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                                    <img
-                                                        src={qrBlobUrl}
-                                                        alt="Verification QR Code"
-                                                        className="w-full h-full object-contain"
-                                                    />
+                                                <div className="flex items-center gap-2">
+                                                    {/* LV Shield logo */}
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" className="w-16 h-16">
+                                                        <path d="M60 5 L110 30 L110 80 Q110 120 60 135 Q10 120 10 80 L10 30 Z"
+                                                            fill="none" stroke="#000000" strokeWidth="4" />
+                                                        <text x="60" y="85" textAnchor="middle" fontFamily="Georgia,serif"
+                                                            fontSize="42" fontWeight="bold" fill="#000000">LV</text>
+                                                    </svg>
+                                                    {/* QR */}
+                                                    <div className="w-32 h-32 overflow-hidden">
+                                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                        <img
+                                                            src={qrBlobUrl}
+                                                            alt="Verification QR Code"
+                                                            className="w-full h-full object-contain"
+                                                        />
+                                                    </div>
                                                 </div>
                                                 <p className="text-[9px] text-gray-400 mt-1.5 leading-tight">
-                                                    Authorship is protected by<br />AuthorHash® · Scan to verify
+                                                    Scan to verify
                                                 </p>
                                             </div>
                                         )}
