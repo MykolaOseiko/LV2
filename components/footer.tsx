@@ -16,19 +16,11 @@ export function Footer() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-8 text-sm">
-                        <div>
-                            <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-accent mb-3">Office</h3>
-                            <ul className="space-y-2 text-muted-foreground">
-                                <li>Wyoming, USA</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul className="space-y-2">
-                                <li><Link href="/terms" className="text-accent hover:text-background transition-colors">Terms of Service</Link></li>
-                                <li><Link href="/privacy" className="text-accent hover:text-background transition-colors">Privacy Policy</Link></li>
-                            </ul>
-                        </div>
+                    <div className="flex gap-8 text-sm">
+                        <ul className="flex flex-wrap gap-x-8 gap-y-2">
+                            <li><Link href="/terms" className="text-accent hover:text-background transition-colors">Terms of Service</Link></li>
+                            <li><Link href="/privacy" className="text-accent hover:text-background transition-colors">Privacy Policy</Link></li>
+                        </ul>
                     </div>
                 </div>
 

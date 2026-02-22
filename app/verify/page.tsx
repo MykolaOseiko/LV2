@@ -160,7 +160,7 @@ function VerifyContent() {
             <Navbar />
             <main className="flex-1 bg-[#F5F5F0]">
                 {/* Header */}
-                <section className="bg-[#0A2F1F] text-[#F5F5F0] py-16">
+                <section className="bg-[#0A2F1F] text-[#F5F5F0] py-8">
                     <div className="container mx-auto px-6 text-center">
                         {isFromQR && !loading && results && results.length > 0 ? (
                             <>

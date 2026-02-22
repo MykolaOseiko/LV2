@@ -1,0 +1,131 @@
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { Shield, Lock, Globe } from "lucide-react";
+
+export default function AboutPage() {
+    return (
+        <>
+            <Navbar />
+            <main className="flex-1 bg-[#F5F5F0]">
+                <section className="bg-[#0A2F1F] text-[#F5F5F0] py-16">
+                    <div className="container mx-auto px-6 text-center">
+                        <h1 className="font-serif text-3xl md:text-5xl font-bold mb-4">
+                            About Libris Ventures
+                        </h1>
+                        <p className="text-[#F5F5F0]/60 uppercase tracking-widest text-sm">
+                            Protecting Creative Assets
+                        </p>
+                    </div>
+                </section>
+
+                <section className="py-16">
+                    <div className="container mx-auto px-6 max-w-3xl space-y-12">
+                        {/* Mission */}
+                        <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm border-t-8 border-[#D4AF37]">
+                            <h2 className="font-serif text-2xl font-bold text-[#0A2F1F] mb-4">
+                                Our Mission
+                            </h2>
+                            <p className="text-gray-700 leading-relaxed">
+                                Libris Ventures LLC exists to protect
+                                intellectual property through verifiable,
+                                immutable cryptographic proof. We provide
+                                authors, creators, and innovators with
+                                independently verifiable evidence that their
+                                work existed at a specific point in time —
+                                anchored to the most secure blockchain in
+                                existence.
+                            </p>
+                        </div>
+
+                        {/* What we do */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div className="bg-white p-6 shadow rounded-sm space-y-3">
+                                <Shield className="h-8 w-8 text-[#0A2F1F]" />
+                                <h3 className="font-serif text-lg font-bold text-[#0A2F1F]">
+                                    Asset Protection
+                                </h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    We hold and protect intellectual property
+                                    rights on behalf of authors, structurally
+                                    separated from commercial operations.
+                                </p>
+                            </div>
+                            <div className="bg-white p-6 shadow rounded-sm space-y-3">
+                                <Lock className="h-8 w-8 text-[#0A2F1F]" />
+                                <h3 className="font-serif text-lg font-bold text-[#0A2F1F]">
+                                    AuthorHash
+                                </h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    Our Certificate of Anteriority service
+                                    provides SHA-256 fingerprinting with Bitcoin
+                                    blockchain anchoring via OpenTimestamps.
+                                </p>
+                            </div>
+                            <div className="bg-white p-6 shadow rounded-sm space-y-3">
+                                <Globe className="h-8 w-8 text-[#0A2F1F]" />
+                                <h3 className="font-serif text-lg font-bold text-[#0A2F1F]">
+                                    Global Reach
+                                </h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    In partnership with KF Books OÜ, we support
+                                    authors bringing their narrative works to
+                                    international markets.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Corporate structure */}
+                        <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm">
+                            <h2 className="font-serif text-2xl font-bold text-[#0A2F1F] mb-4">
+                                Corporate Structure
+                            </h2>
+                            <p className="text-gray-700 leading-relaxed mb-6">
+                                Libris Ventures operates as the Asset Company
+                                within a two-entity IP protection structure
+                                designed to safeguard authors&apos; rights.
+                            </p>
+
+                            <div className="space-y-4">
+                                <div className="border-l-4 border-[#D4AF37] pl-4">
+                                    <h3 className="font-bold text-[#0A2F1F]">
+                                        Libris Ventures LLC (Wyoming, USA)
+                                    </h3>
+                                    <p className="text-sm text-gray-600">
+                                        The Asset Company. Holds IP rights,
+                                        provides AuthorHash certificates,
+                                        maintains the Author Dashboard. Does
+                                        not engage in commercial trade.
+                                    </p>
+                                </div>
+                                <div className="border-l-4 border-[#0A2F1F] pl-4">
+                                    <h3 className="font-bold text-[#0A2F1F]">
+                                        KF Books OÜ (Estonia)
+                                    </h3>
+                                    <p className="text-sm text-gray-600">
+                                        The Publishing Company. Operates under
+                                        exclusive worldwide licence from Libris
+                                        Ventures. Handles all commercial
+                                        publishing activities, sales, and
+                                        royalty payments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Legal */}
+                        <div className="text-center text-sm text-gray-500">
+                            <p>
+                                All agreements governed by the laws of England
+                                and Wales.
+                                <br />
+                                Disputes resolved through WIPO Expedited
+                                Arbitration in London.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <Footer />
+        </>
+    );
+}

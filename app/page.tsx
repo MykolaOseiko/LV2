@@ -12,13 +12,12 @@ export default function Home() {
             <Navbar />
             <main className="flex-1">
                 {/* Hero */}
-                <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-[#0A2F1F] text-[#F5F5F0]">
+                <section className="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden bg-[#0A2F1F] text-[#F5F5F0]">
                     <div
                         className="absolute inset-0 z-0"
                         style={{
                             backgroundImage: "url('/library-bg.png')",
                             backgroundSize: "cover",
-                            backgroundPosition: "center",
                         }}
                     />
                     <div className="absolute inset-0 bg-black/60 z-10" />
@@ -57,16 +56,6 @@ export default function Home() {
                             Manuscripts · Illustrations · Music · Photos · Code<br />Any asset secured in under 60 seconds
                         </motion.p>
 
-                        <motion.p
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.8, duration: 0.8 }}
-                            className="mx-auto max-w-xl text-sm text-[#F5F5F0]/60 mb-10 leading-relaxed"
-                        >
-                            Your file never leaves your device&thinsp;—&thinsp;we hash it locally, anchor the fingerprint
-                            to the Bitcoin blockchain via OpenTimestamps, and issue you a verifiable Certificate&nbsp;of&nbsp;Anteriority.
-                        </motion.p>
-
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -80,6 +69,16 @@ export default function Home() {
                                 Secure Your Asset <ArrowRight className="h-4 w-4" />
                             </Link>
                         </motion.div>
+
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.8, duration: 0.8 }}
+                            className="mx-auto max-w-xl text-sm text-[#F5F5F0]/60 mt-10 leading-relaxed"
+                        >
+                            Your file never leaves your device&thinsp;—&thinsp;we hash it locally, anchor the fingerprint
+                            to the Bitcoin blockchain via OpenTimestamps, and issue you a verifiable Certificate&nbsp;of&nbsp;Anteriority.
+                        </motion.p>
                     </div>
                 </section>
 

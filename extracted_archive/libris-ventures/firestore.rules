@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Certificates - public read for verification, write only via Cloud Functions
+    match /registry_entries/{entry} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Sequential certificate counter - internal only
+    match /certificate_counter/{doc} {
+      allow read, write: if false;
+    }
+
+    // Magic link tokens - internal only
+    match /magic_links/{token} {
+      allow read, write: if false;
+    }
+
+    // Email queue (Firebase Trigger Email extension) - internal only
+    match /mail/{doc} {
+      allow read, write: if false;
+    }
+  }
+}

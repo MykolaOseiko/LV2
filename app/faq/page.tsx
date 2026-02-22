@@ -143,7 +143,7 @@ export default function FaqPage() {
         <>
             <Navbar />
             <main className="flex-1 bg-[#F5F5F0]">
-                <section className="bg-[#0A2F1F] text-[#F5F5F0] py-16">
+                <section className="bg-[#0A2F1F] text-[#F5F5F0] py-8">
                     <div className="container mx-auto px-6 text-center">
                         <h1 className="font-serif text-3xl md:text-5xl font-bold mb-4">
                             Frequently Asked Questions
