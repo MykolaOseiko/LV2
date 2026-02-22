@@ -282,7 +282,7 @@ function TimestampContent() {
                                             <div className="shrink-0 text-center">
                                                 <div className="flex items-center gap-2">
                                                     {/* LV Shield logo */}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" className="w-16 h-16">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" className="w-28 h-28">
                                                         <path d="M60 5 L110 30 L110 80 Q110 120 60 135 Q10 120 10 80 L10 30 Z"
                                                             fill="none" stroke="#000000" strokeWidth="4" />
                                                         <text x="60" y="85" textAnchor="middle" fontFamily="Georgia,serif"
