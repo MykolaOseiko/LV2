@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { Shield, Lock, Globe } from "lucide-react";
+import { ShieldCheck, Lock, Globe } from "lucide-react";
 
 export default function AboutPage() {
     return (
@@ -63,7 +63,7 @@ export default function AboutPage() {
                                 </p>
                             </div>
                             <div className="bg-white p-6 shadow rounded-sm space-y-3">
-                                <Shield className="h-8 w-8 text-[#0A2F1F]" />
+                                <ShieldCheck className="h-8 w-8 text-[#0A2F1F]" />
                                 <h3 className="font-serif text-lg font-bold text-[#0A2F1F]">
                                     Asset Protection
                                 </h3>
