@@ -63,7 +63,26 @@ export function Navbar() {
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-x-6 items-center">
                 </div>
             </nav>
-            {/* Mobile menu logic would go here, simplified for now */}
+            {/* Mobile menu */}
+            {mobileMenuOpen && (
+                <div className="lg:hidden bg-primary border-t border-accent/20 px-6 pb-6">
+                    <div className="flex flex-col gap-4 pt-4">
+                        {navigation.map((item) => (
+                            <Link
+                                key={item.name}
+                                href={item.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className={cn(
+                                    "text-sm font-semibold leading-6 transition-colors hover:text-accent font-sans tracking-wide py-2",
+                                    pathname === item.href ? "text-accent border-b border-accent" : "text-background/90"
+                                )}
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            )}
         </header>
     );
 }
