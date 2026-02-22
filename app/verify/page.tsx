@@ -312,7 +312,7 @@ function VerifyContent() {
                         ) : (
                             /* --- Standard search interface --- */
                             <>
-                                <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm border-t-8 border-[#0A2F1F]">
+                                <div className="bg-white p-8 md:p-12 shadow-2xl rounded-sm border-t-8 border-[#D4AF37]">
                                     {/* Tabs */}
                                     <div className="flex mb-8 border-b">
                                         {([
