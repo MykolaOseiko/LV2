@@ -10,20 +10,20 @@ const faqs = [
         category: "What is AuthorHash?",
         items: [
             {
+                q: "Who is AuthorHash for?",
+                a: "Anyone who needs to protect original digital work they create — writers, illustrators, musicians, photographers, software developers, researchers, designers, legal professionals. If you've ever worried that someone might copy your work and claim it as their own, or needed to prove exactly when a document or file existed, AuthorHash gives you that proof in under 60 seconds.",
+            },
+            {
                 q: "What does AuthorHash actually do?",
-                a: "AuthorHash creates an unforgeable timestamp proving that your file existed at a specific moment in time. We generate a SHA-256 cryptographic fingerprint of your file (without uploading it), anchor that fingerprint to the Bitcoin blockchain, and issue you a Certificate of Anteriority — a verifiable record that this specific digital fingerprint existed before anyone else can claim it.",
+                a: "AuthorHash creates a dual-layer, unforgeable proof that your file existed at a specific moment in time. We generate a SHA-256 cryptographic fingerprint of your file (without uploading it), anchor that fingerprint to the Bitcoin blockchain via OpenTimestamps, and simultaneously connect it with an EU-grade qualified timestamp (eIDAS). Both proofs can be verified independently — the blockchain proof using open-source tools, and the eIDAS timestamp through any qualified trust service provider — with no reliance on Libris Ventures whatsoever.",
             },
             {
                 q: "Is this the same as copyright registration?",
                 a: "No. AuthorHash provides proof of existence (anteriority), not copyright registration. It does not grant you any legal rights. However, in a dispute over who created a work first, an AuthorHash certificate can serve as strong, independently verifiable evidence of the date your version existed — which is often the most difficult thing to prove.",
             },
             {
-                q: "Who is AuthorHash for?",
-                a: "Anyone who creates original digital work — writers, illustrators, musicians, photographers, software developers, researchers, designers. If you've ever worried that someone might copy your work and claim it as their own, or that you might need to prove when your version existed, AuthorHash gives you that proof in under 60 seconds.",
-            },
-            {
                 q: "What types of files can I protect?",
-                a: "Any digital file — manuscripts, illustrations, music tracks, photographs, videos, source code, design files, research data, contracts, or any other digital asset. If it's a file on your device, you can generate a proof of existence for it.",
+                a: "Any digital file — manuscripts, illustrations, music tracks, photographs, videos, source code, design files, research data, contracts, legal agreements, or any other digital asset. If it's a file on your device, you can generate a proof of existence for it.",
             },
         ],
     },
@@ -41,6 +41,10 @@ const faqs = [
             {
                 q: "What is OpenTimestamps and the Bitcoin blockchain?",
                 a: "OpenTimestamps is an open-source protocol that anchors data to the Bitcoin blockchain — the most secure, decentralised, and tamper-proof public ledger in existence. Once your hash is anchored, even we cannot alter or delete the timestamp. It becomes a permanent, independently verifiable public record.",
+            },
+            {
+                q: "What is the eIDAS qualified timestamp?",
+                a: "In addition to the Bitcoin blockchain anchor, AuthorHash connects your hash with an eIDAS-compliant qualified timestamp issued by a European Qualified Trust Service Provider (QTSP). Under EU regulation, eIDAS qualified timestamps carry legal presumption of accuracy across all EU member states. This timestamp can be verified by any QTSP — completely independently of Libris Ventures — giving you a second, legally recognised layer of proof.",
             },
             {
                 q: "How long does the process take?",
@@ -83,6 +87,10 @@ const faqs = [
             {
                 q: "What if Libris Ventures ceases to exist?",
                 a: "Your proof survives independently. The Bitcoin blockchain is decentralised and permanent. Your .ots proof file can be verified using open-source tools by anyone, anywhere — no reliance on our company is needed. That's the entire point of blockchain anchoring.",
+            },
+            {
+                q: "Can I use AuthorHash for legal agreements and contracts?",
+                a: "Yes. When two parties execute a contract or agreement, a digital copy (PDF, signed scan, or any format) can be AuthorHashed by either party. The resulting certificate proves that the exact version of the agreement existed at that specific timestamp — which can be critical in disputes about when terms were agreed upon, or whether a document was altered after signing.",
             },
             {
                 q: "Can I get a refund?",
