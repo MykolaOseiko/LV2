@@ -45,9 +45,10 @@ export default function AboutPage() {
                                     AuthorHash
                                 </h3>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Our Certificate of Anteriority service
-                                    provides SHA-256 fingerprinting with Bitcoin
-                                    blockchain anchoring via OpenTimestamps.
+                                    Our Certificate service provides SHA-256
+                                    fingerprinting with both EU-grade timestamp
+                                    and OpenTimestamp (Bitcoin blockchain
+                                    anchoring).
                                 </p>
                             </div>
                             <div className="bg-white p-6 shadow rounded-sm space-y-3">
@@ -56,9 +57,9 @@ export default function AboutPage() {
                                     Global Reach
                                 </h3>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    We serve creators worldwide, helping authors
-                                    and innovators protect their work across
-                                    international markets.
+                                    We serve clients worldwide, helping authors,
+                                    creators, and innovators protect their work
+                                    across international markets.
                                 </p>
                             </div>
                             <div className="bg-white p-6 shadow rounded-sm space-y-3">
