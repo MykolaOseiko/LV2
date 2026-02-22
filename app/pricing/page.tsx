@@ -24,7 +24,7 @@ export default function PricingPage() {
                         <span className="text-xs font-bold tracking-widest uppercase text-[#D4AF37] mb-4 block">
                             Invest in Digital Trust
                         </span>
-                        <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6">
+                        <h1 className="font-serif text-3xl md:text-5xl font-bold mb-6">
                             One Price. Dual Shield.
                         </h1>
                         <p className="text-[#F5F5F0]/80 max-w-2xl mx-auto text-lg font-light">

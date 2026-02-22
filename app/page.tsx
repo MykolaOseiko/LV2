@@ -41,7 +41,7 @@ export default function Home() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3, duration: 0.8 }}
-                            className="font-serif text-5xl md:text-7xl font-bold mb-6 tracking-tight text-[#F5F5F0] drop-shadow-lg"
+                            className="font-serif text-3xl md:text-5xl font-bold mb-6 tracking-tight text-[#F5F5F0] drop-shadow-lg"
                         >
                             Instant proof of <br className="hidden md:block" />
                             authorship for your <br className="hidden md:block" />
