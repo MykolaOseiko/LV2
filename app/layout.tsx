@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, Roboto_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -58,6 +59,11 @@ export default function RootLayout({
         >
             <body className="font-sans bg-background text-foreground min-h-screen flex flex-col">
                 {children}
+                <Script
+                    data-goatcounter="https://stats.librisventures.com/count"
+                    src="https://stats.librisventures.com/count.js"
+                    strategy="afterInteractive"
+                />
             </body>
         </html>
     );
