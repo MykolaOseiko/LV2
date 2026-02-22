@@ -52,9 +52,19 @@ export default function Home() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.6, duration: 0.8 }}
-                            className="mx-auto max-w-2xl text-lg md:text-xl text-[#F5F5F0]/90 font-light mb-10 leading-relaxed drop-shadow-md"
+                            className="mx-auto max-w-2xl text-lg md:text-xl text-[#F5F5F0]/90 font-light mb-6 leading-relaxed drop-shadow-md"
                         >
                             Manuscripts · Illustrations · Music · Photos · Code<br />Any asset secured in under 60 seconds
+                        </motion.p>
+
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.8, duration: 0.8 }}
+                            className="mx-auto max-w-xl text-sm text-[#F5F5F0]/60 mb-10 leading-relaxed"
+                        >
+                            Your file never leaves your device&thinsp;—&thinsp;we hash it locally, anchor the fingerprint
+                            to the Bitcoin blockchain via OpenTimestamps, and issue you a verifiable Certificate&nbsp;of&nbsp;Anteriority.
                         </motion.p>
 
                         <motion.div

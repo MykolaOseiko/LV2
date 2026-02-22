@@ -12,6 +12,7 @@ const navigation = [
     { name: "Verify", href: "/verify" },
     { name: "Pricing", href: "/pricing" },
     { name: "About", href: "/about" },
+    { name: "FAQ", href: "/faq" },
 ];
 
 export function Navbar() {
