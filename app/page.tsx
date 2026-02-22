@@ -173,8 +173,7 @@ export default function Home() {
                             Quality Guarantee: 60 Days Money Back
                         </h2>
                         <p className="text-[#F5F5F0]/70 max-w-2xl mx-auto mb-10 text-lg">
-                            We guarantee mathematical and legal accuracy.
-                            100% refund if the hash doesn't match or the timestamp fails verification.
+                            We guarantee mathematical and legal accuracy. 100% refund if the timestamp fails verification.
                         </p>
                         <Link
                             href="/timestamp"
