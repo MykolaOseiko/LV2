@@ -2,21 +2,17 @@ import QRCodeStyling, {
     type Options as QROptions,
 } from "qr-code-styling";
 
-/* ── Brand tokens ─────────────────────────────────────────── */
-const LV_DARK_GREEN = "#0A2F1F";
-const LV_GOLD = "#D4AF37";
-const LV_CREAM = "#F5F5F0";
+/* ── B&W palette for maximum scannability ──────────────── */
 
 /**
- * Inline SVG of the LV shield logo.
- * Kept as a data-URI so it works without external files.
+ * Inline SVG of the LV shield logo — black contour only.
  */
 const LV_SHIELD_SVG = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
   <path d="M60 5 L110 30 L110 80 Q110 120 60 135 Q10 120 10 80 L10 30 Z"
-        fill="${LV_DARK_GREEN}" stroke="${LV_GOLD}" stroke-width="3"/>
+        fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
   <text x="60" y="85" text-anchor="middle" font-family="Georgia,serif"
-        font-size="42" font-weight="bold" fill="${LV_GOLD}">LV</text>
+        font-size="42" font-weight="bold" fill="#000000">LV</text>
 </svg>
 `)}`;
 
@@ -27,25 +23,25 @@ const BASE_OPTIONS: Partial<QROptions> = {
         errorCorrectionLevel: "H", // 30% — room for logo overlay
     },
     dotsOptions: {
-        color: LV_DARK_GREEN,
-        type: "rounded",
+        color: "#000000",
+        type: "square",
     },
     cornersSquareOptions: {
-        color: LV_GOLD,
-        type: "extra-rounded",
+        color: "#000000",
+        type: "square",
     },
     cornersDotOptions: {
-        color: LV_GOLD,
-        type: "dot",
+        color: "#000000",
+        type: "square",
     },
     backgroundOptions: {
-        color: LV_CREAM,
+        color: "#FFFFFF",
     },
     image: LV_SHIELD_SVG,
     imageOptions: {
         crossOrigin: "anonymous",
-        margin: 6,
-        imageSize: 0.35,
+        margin: 4,
+        imageSize: 0.25,
         hideBackgroundDots: true,
     },
 };
