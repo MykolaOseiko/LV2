@@ -198,7 +198,7 @@ export async function generateCertificatePDF(
         const qrDataUrl = await QRCode.toDataURL(verifyUrl, {
             width: 120,
             margin: 1,
-            color: { dark: "#0A2F1F", light: "#F5F5F0" },
+            color: { dark: "#0A2F1F", light: "#FFFFFF" },
         });
         const qrImageBytes = Uint8Array.from(
             atob(qrDataUrl.split(",")[1]),
