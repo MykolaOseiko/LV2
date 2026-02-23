@@ -68,8 +68,7 @@ function TimestampContent() {
     // --- Generate QR code for success state ---
     const generateQR = async (certRef: string) => {
         try {
-            const origin = window.location.origin;
-            const verifyUrl = `${origin}/verify?ref=${certRef}`;
+            const verifyUrl = `https://librisventures.com/verify?ref=${certRef}`;
             const blob = await generateBrandedQR(verifyUrl, 400);
             const url = URL.createObjectURL(blob);
             setQrBlobUrl(url);
@@ -177,7 +176,6 @@ function TimestampContent() {
             registrationTimestamp: certResult.timestamp,
             blockchainStatus: certResult.blockchainStatus,
             registrantEmail: certResult.email,
-            baseUrl: window.location.origin,
         });
         downloadPDF(pdfBytes, certResult.certRef);
     };
@@ -197,9 +195,8 @@ function TimestampContent() {
 
     const handleDownloadQR = async () => {
         if (!certResult) return;
-        const origin = window.location.origin;
         await downloadBrandedQR(
-            `${origin}/verify?ref=${certResult.certRef}`,
+            `https://librisventures.com/verify?ref=${certResult.certRef}`,
             `${certResult.certRef}_QR`
         );
     };

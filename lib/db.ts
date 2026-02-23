@@ -55,7 +55,7 @@ export function insertCertificate(cert: Omit<CertRecord, "id" | "createdAt">): C
 }
 
 export function findByCertRef(certRef: string): CertRecord | undefined {
-    const stmt = db.prepare("SELECT * FROM certificates WHERE certRef = ?");
+    const stmt = db.prepare("SELECT * FROM certificates WHERE UPPER(certRef) = UPPER(?)");
     return stmt.get(certRef) as CertRecord | undefined;
 }
 

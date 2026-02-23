@@ -193,8 +193,7 @@ export async function generateCertificatePDF(
     });
 
     // --- QR Code ---
-    const origin = data.baseUrl || (typeof window !== "undefined" ? window.location.origin : "https://librisventures.com");
-    const verifyUrl = `${origin}/verify?ref=${data.certRef}`;
+    const verifyUrl = `https://librisventures.com/verify?ref=${data.certRef}`;
     try {
         const qrDataUrl = await QRCode.toDataURL(verifyUrl, {
             width: 120,
@@ -243,7 +242,7 @@ export async function generateCertificatePDF(
         "this certificate cannot be used to reproduce it. A single byte change to the file will",
         "produce a different hash and invalidate the proof.",
         "",
-        "Verification: " + (data.baseUrl || (typeof window !== "undefined" ? window.location.origin : "https://librisventures.com")) + "/verify?ref=" + data.certRef,
+        "Verification: https://librisventures.com/verify?ref=" + data.certRef,
     ];
 
     y -= 5;

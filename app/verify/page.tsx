@@ -162,7 +162,7 @@ function VerifyContent() {
                 {/* Header */}
                 <section className="bg-[#0A2F1F] text-[#F5F5F0] py-8">
                     <div className="container mx-auto px-6 text-center">
-                        {isFromQR && !loading && results && results.length > 0 ? (
+                        {isFromQR && (!loading || (results && results.length > 0)) ? (
                             <>
                                 <div className="flex items-center justify-center gap-3 mb-4">
                                     <QrCode className="h-8 w-8 text-[#D4AF37]" />
