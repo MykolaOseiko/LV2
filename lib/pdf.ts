@@ -7,6 +7,7 @@ export interface CertificateData {
     registrationTimestamp: number;
     blockchainStatus: "pending" | "confirmed";
     registrantEmail?: string;
+    baseUrl?: string;
 }
 
 const LV_GREEN = rgb(10 / 255, 47 / 255, 31 / 255);
@@ -192,7 +193,8 @@ export async function generateCertificatePDF(
     });
 
     // --- QR Code ---
-    const verifyUrl = `https://librisventures.com/verify?ref=${data.certRef}`;
+    const origin = data.baseUrl || (typeof window !== "undefined" ? window.location.origin : "https://librisventures.com");
+    const verifyUrl = `${origin}/verify?ref=${data.certRef}`;
     try {
         const qrDataUrl = await QRCode.toDataURL(verifyUrl, {
             width: 120,
@@ -241,7 +243,7 @@ export async function generateCertificatePDF(
         "this certificate cannot be used to reproduce it. A single byte change to the file will",
         "produce a different hash and invalidate the proof.",
         "",
-        "Verification: " + verifyUrl,
+        "Verification: " + (data.baseUrl || (typeof window !== "undefined" ? window.location.origin : "https://librisventures.com")) + "/verify?ref=" + data.certRef,
     ];
 
     y -= 5;
